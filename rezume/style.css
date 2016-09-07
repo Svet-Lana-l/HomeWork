@@ -68,3 +68,19 @@ li:nth-child(2n) {
 footer {
 	float: right;
 }
+.menu td {
+	border-right: solid 1px;
+	padding-left: 18px;
+	padding-right: 18px;
+	color: darkgray;
+	font-family: monospace;
+	text-align: center;
+}
+.menu td:last-child {
+	border-right: none;
+}
+.menu a {
+	color: darkolivegreen;
+	font-size: 13px;
+	font-weight: bold;
+}
