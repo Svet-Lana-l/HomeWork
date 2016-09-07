@@ -1,0 +1,70 @@
+.side_right {
+	float: right;
+	width: 110px;
+	text-align:right;
+}
+body {
+	width: 800px;
+}
+h1,h2 {
+	text-align: center;
+	padding-top:10px;
+}
+h2 {
+	color:#336666;
+	font-style: italic;
+	font-family: fantasy;
+}
+h3 {
+	background-color: #cccccc;
+	border-bottom: 5px outset;
+	border-left:5px outset;
+}
+.lichn {
+	text-align:center;
+}
+.tab2_right {
+	text-align: center;
+	padding-left:50px;
+	padding-right:50px;
+	font-weight : bold;
+}
+h3 + p {
+	padding-left:20px;
+}
+.t_right {
+	text-align: right;
+	padding-left:50px;
+	padding-right:30px;
+	font-size:13px;
+	font-weight : bold;
+}
+.t_left {
+	font-style: italic;
+	text-align: left;
+	padding-right: 30px;
+}
+.robota img {
+	width: 10%;
+	float: left;
+}
+.robota:last-child {
+	clear: both;
+}
+.tab1_right {
+	width: 100px;
+	text-align: center;
+	padding-left:50px;
+	padding-right:50px;
+	font-weight: bold;
+}
+li {
+	font-family: cursive;
+}
+li:nth-child(2n) {
+	color: dimgray;
+	font-weight: bold;
+}
+footer {
+	float: right;
+}
