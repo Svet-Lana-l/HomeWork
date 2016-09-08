@@ -1,0 +1,24 @@
+.green {
+    width: 30px;
+    padding: 5px;
+    border-radius: 50% ;
+    background: green;
+    color: white;
+    text-align: center;
+}
+.yellow {
+    width: 30px;
+    padding: 5px;
+    border-radius: 50% ;
+    background: yellow;
+    color: black;
+    text-align: center;
+}
+.blue {
+    width: 30px;
+    padding: 5px;
+    border-radius: 50% ;
+    background: blue;
+    color: white;
+    text-align: center;
+}
