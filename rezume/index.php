@@ -10,8 +10,8 @@
 	<body>
 		<!-- My rezume -->
 		<?php
-		$menu = array("Особові відомості", "Мета", "Освіта", "Трудова діяльність", "Професійні навички",
-			"Особисті якості",);
+		$menu = array('Особові відомості', 'Мета', 'Освіта', 'Трудова діяльність', 'Професійні навички',
+			'Особисті якості',);
 
 		?>
 		<h1>Резюме</h1>
@@ -24,7 +24,7 @@
 				<tr>
 					<?php
 					for ($i=0; $i<=5; $i++) {
-						$menu_n="menu" . $i;
+						$menu_n='menu' . $i;
 						echo '<td><a href="#' . $menu_n . '">' . $menu[$i] . '</a></td>';
 					}
 					?>
@@ -38,13 +38,13 @@
 		</div>
 		<div class="lichn" id="menu0">
 			<?php
-				$birthday = "02.02.1968р.";
+				$birthday = '02.02.1968р.';
 				$age = date("Y") - substr($birthday,6,4);
 			?>
 			<table>
 				<tr>
 					<td class="t_right">Дата народження:  </td>
-					<td class="t_left"><?php echo $birthday . " ( " . $age . "p.)";?></td>
+					<td class="t_left"><?php echo $birthday . ' ( ' . $age . 'p.)';?></td>
 				</tr>
 				<tr>
 					<td class="t_right" >Сімейний стан:</td>
@@ -96,12 +96,12 @@
 			<h3>ТРУДОВА ДІЯЛЬНІСТЬ </h3>
 				<table class="robota">
 					<?php
-						$time_w1 = "1996 – 2016 p.";
-						$time_w2 = "1991 - 1996 р.";
+						$time_w1 = '1996 – 2016 p.';
+						$time_w2 = '1991 - 1996 р.';
 					?>
 					<tr>
 						<td rowspan="2" class="tab2_right"> <?php echo $time_w1 . ' ( ' .
-								(substr($time_w1,9,4) - substr($time_w1,0,4)) . "p.)";?></td>
+								(substr($time_w1,9,4) - substr($time_w1,0,4)) . 'p.)';?></td>
 						<td><b><img src="img/bank.jpg" alt="logo"/> Дарницьке відділення АТ „ Ощадбанк”</b></td>
 					</tr>
 					<tr>
@@ -109,7 +109,7 @@
 					</tr>
 					<tr>
 						<td rowspan="2" class="tab2_right"> <?php echo $time_w2 . ' ( ' .
-								(substr($time_w2,7,4) - substr($time_w2,0,4)) . "p.)";?></td>
+								(substr($time_w2,7,4) - substr($time_w2,0,4)) . 'p.)';?></td>
 						<td> <b>КБ Київського радіозавода</b></td>
 					</tr>
 					<tr>
@@ -150,8 +150,10 @@
 		<footer>
 			<table>
 				<tr>
-					<td><a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.jpg" alt="LinkedIn"></a></td>
-					<td><a href="https://www.skype.com/ru/" target="_blank"><img src="img/skype.jpg" alt="Skype"></a></td>
+					<td><a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.jpg" alt="LinkedIn">
+                        </a></td>
+					<td><a href="https://www.skype.com/ru/" target="_blank"><img src="img/skype.jpg" alt="Skype"></a>
+                    </td>
 				</tr>
 			</table>
 		</footer>
