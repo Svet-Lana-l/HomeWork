@@ -8,15 +8,11 @@
 <?php
 echo ' Дан массив $arr. С помощью цикла foreach запишите английские названия в массив $en, а
 русские — в массив $ru. <br> <br>';
-// variant 1
+// variant 2
 $arr = array('green'=>'зеленый', 'red'=>'красный','blue'=>'голубой');
-$en = array();
-$ru = array();
-foreach ($arr as $key=>$value ){
-    $en[] = $key;
-    $ru[] = $value;
+$en = array_keys($arr);
+$ru = array_values($arr);
 
-}
 echo 'массив $en <br>';
 echo var_dump($en) . '<br>' ;
 foreach ($en as $value) {

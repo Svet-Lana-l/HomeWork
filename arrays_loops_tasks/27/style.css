@@ -1,0 +1,26 @@
+.table1 td {
+    padding: 15px;
+    font: 18px bold;
+    border: 1px solid;
+}
+.cell_0 {
+    background-color: red;
+}
+.cell_1 {
+    background-color: yellow;
+}
+.cell_2 {
+    background-color: blue;
+}
+.cell_3 {
+    background-color: gray;
+}
+.cell_4 {
+    background-color: maroon;
+}
+.cell_5 {
+    background-color: brown;
+}
+.cell_6 {
+    background-color: green;
+}
