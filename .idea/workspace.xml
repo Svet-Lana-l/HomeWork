@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83c3cc19-09db-498b-9e8b-91487ce00a3c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrays_loops_tasks/1.php" afterPath="$PROJECT_DIR$/arrays_loops_tasks/1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrays_loops_tasks/2.php" afterPath="$PROJECT_DIR$/arrays_loops_tasks/2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrays_loops_tasks/3.php" afterPath="$PROJECT_DIR$/arrays_loops_tasks/3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrays_loops_tasks/4.php" afterPath="$PROJECT_DIR$/arrays_loops_tasks/4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrays_loops_tasks/5.php" afterPath="$PROJECT_DIR$/arrays_loops_tasks/5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrays_loops_tasks/6.php" afterPath="$PROJECT_DIR$/arrays_loops_tasks/6.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrays_loops_tasks/7.php" afterPath="$PROJECT_DIR$/arrays_loops_tasks/7.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrays_loops_tasks/8.php" afterPath="$PROJECT_DIR$/arrays_loops_tasks/8.php" />
-    </list>
+    <list default="true" id="83c3cc19-09db-498b-9e8b-91487ce00a3c" name="Default" comment="" />
     <ignored path="sveta.name.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -127,8 +118,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/arrays_loops_tasks/27/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="170">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -367,7 +358,7 @@
       <workItem from="1473492410477" duration="8099000" />
       <workItem from="1473532342090" duration="10952000" />
       <workItem from="1473619348661" duration="5784000" />
-      <workItem from="1473660178500" duration="28380000" />
+      <workItem from="1473660178500" duration="29511000" />
     </task>
     <task id="LOCAL-00001" summary="ver-1-2">
       <created>1473328360671</created>
@@ -380,7 +371,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95044000" />
+    <option name="totallyTimeSpent" value="96175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="294" y="114" width="1532" height="995" extended-state="0" />
@@ -777,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/arrays_loops_tasks/27/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
