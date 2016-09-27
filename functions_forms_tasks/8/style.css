@@ -1,0 +1,13 @@
+.comment tr  :first-child {
+    color : navy;
+    font-weight: bold;
+}
+.comment tr :nth-child(2) {
+    text-align: center;
+    font: 12px  italic gray;
+}
+.comment td {
+
+    padding-left: 10px;
+    padding-right: 10px;
+ }
