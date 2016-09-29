@@ -1,0 +1,92 @@
+#messages {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    clear: both;
+}
+#messages .user-message {
+    border: 1px solid #cacaca;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+}
+.user-head {
+    width: 100%;
+    height: 30px;
+    background: #96cec0;
+}
+.user-fio , .user-email {
+    padding: 5px 10px;
+
+    margin: 0;
+}
+.user-fio {
+    width: 40%;
+    float: left;
+    color: #ffffb5;
+ }
+.user-email {
+    width: 40%;
+    float: right;
+    text-align: right;
+    display: inline;
+    color: #fff;
+}
+.user-text {
+    padding: 10px;
+    color: #617b3d;
+}
+#user-form {
+    float: left;
+    margin-top: 40px;
+    padding: 10px 0;
+    clear: both;
+}
+#user-form input:-webkit-autofill,
+#user-form select:-webkit-autofill,{
+    background-color: grey;
+}
+#user-form input[type=text]:focus,
+#user-form input[type=email]:focus,
+#user-form textarea:focus {
+    border-color: #93e1d8;
+    outline: none;
+}
+#user-form input[type=text],
+#user-form input[type=email],
+#user-form textarea {
+    float: left;
+    width: 400px;
+    margin-bottom: 15px;
+    padding: 5px;
+    clear: both;
+    color: #0a4c44;
+}
+
+#user-form input[type=submit] {
+    float: left;
+    padding: 5px;
+    clear: both;
+}
+#user-form textarea {
+    max-width:400px;
+}
+#user-form input[type=submit] {
+    background-color: #93e1d8;
+    width: 200px;
+    margin-left: 100px;
+    color: #074547;
+    font: 18px bold monospace;
+}
+.congratulations {
+    font-family: Calibri;
+}
+.congratulations a {
+    color: #4d7427;
+    font-family: cursive;
+}
+.error_input {
+    color: #a54812;
+    font-family: "Arial Narrow" ;
+    font-style: italic ;
+    font-weight: bold;
+}
