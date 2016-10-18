@@ -3,6 +3,7 @@
   //  echo $_SERVER['REQUEST_URI'];
     // header('Location:'.$_SERVER['REQUEST_URI']);
 //}
+setcookie('dir_t');
 require_once 'file_lib.php';
 
 //$dir_root = __DIR__;
@@ -21,6 +22,16 @@ if (isset($_GET['dir'])) {
 elseif (isset($_POST['dir'])) {
     if (is_dir($_POST['dir'])) {
         $dir_c = $_POST['dir'];
+    }
+    else{
+        if (!isset($dir_c)) {
+            $dir_c = __DIR__;
+        }
+    }
+}
+elseif (isset($_COOKIE['dir_t'])) {
+    if (is_dir($_COOKIE['dir_t'])) {
+        $dir_c = $_COOKIE['dir_t'];
     }
     else{
         if (!isset($dir_c)) {
@@ -50,25 +61,21 @@ ksort($arr_d);
     <title>File_Manager</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link type='text/css' rel='stylesheet' href='css/style.css'/>
+    <link rel="stylesheet" type="text/css" href="CodeMirror/cm/theme/ambiance.css">
+    <link rel="stylesheet" type="text/css" href="CodeMirror/cm/theme/solarized.css">
+
     <script src="CodeMirror/cm/lib/codemirror-compressed.js"></script>
+    <script src="CodeMirror/cm/mode/php-compressed.js"></script>
+    <script src="CodeMirror/cm/mode/htmlmixed-compressed.js"></script>
     <script src="CodeMirror/cm/mode/javascript-compressed.js"></script>
     <link rel="stylesheet" href="CodeMirror/cm/lib/codemirror.css">
+    <link type='text/css' rel='stylesheet' href='css/style.css'/>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        if (document.getElementById("code")) {
-        var editor = CodeMirror.fromTextArea(document.getElementById("code"),  {
-            lineNumbers: true,               // показывать номера строк
-            matchBrackets: true,             // подсвечивать парные скобки
-            mode: 'application/x-httpd-php', // стиль подсветки
-            indentUnit: 4                    // размер табуляции
-        });}
 
-    </script>
 </head
 
 <body>
@@ -85,12 +92,12 @@ ksort($arr_d);
 
                     <?php
                         if (isset($_GET['name'])) {
-                            $text_file = file_get_contents($_GET['name']);
+                            $text_file = htmlspecialchars(file_get_contents($_GET['name']));
                             $name_file = $_GET['name'];
                     ?>
                             <form action="file_lib.php" method="post">
                                 <label for="code">Редактируем файл - <?php echo $name_file;?></label>
-                                <textarea name="file_text" id="code"><?php echo $text_file; ?></textarea>
+                                <textarea name="file_text" id="code" class="CodeMirror"><?php echo $text_file; ?></textarea>
                                 <input type="hidden" name="name" value="<?php echo $name_file;?>">
                                 <input type="hidden" name="dir" value="<?php echo $dir_c;?>">
                                 <input type="submit" value="Save">
@@ -112,5 +119,20 @@ ksort($arr_d);
             </div>
         </section>
     </div>
+<script>
+    if (document.getElementById("code")) {
+        var editor = CodeMirror.fromTextArea(document.getElementById("code"),  {
+            lineNumbers: true,               // показывать номера строк
+            matchBrackets: true,             // подсвечивать парные скобки
+            mode: 'application/x-httpd-php', // стиль подсветки
+            //mode: 'php',
+            //theme: 'ambiance',
+            indentUnit: 4,                    // размер табуляции
+            scrollbarStyle: 'native'
+        });
+
+    }
+
+</script>
 </body>
 </html>

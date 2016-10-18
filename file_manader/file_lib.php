@@ -84,9 +84,9 @@ function get_dir($arr_dir, $dir_c) {
 function save_file(){
 
     if (isset($_POST['name']) and isset($_POST['file_text'])) {
-        file_put_contents($_POST['name'], $_POST['file_text']);
+        file_put_contents($_POST['name'], htmlspecialchars_decode($_POST['file_text']));
     }
-   //$dir_c = $_POST['name'];
+    setcookie('dir_t', dirname($_POST['name']));
 
-   header('Location:index.php');
+    header('Location:index.php');
 }
